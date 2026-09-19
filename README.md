@@ -10,3 +10,5 @@ Plain static HTML/CSS/JS with no build step. It runs on GitHub Pages as is: Sett
 - `assets/`: storefront photo and social preview image
 
 Preview locally: `python3 -m http.server` and open http://localhost:8000
+
+Possible domain (available): newimagehb.com
