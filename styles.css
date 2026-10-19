@@ -3,9 +3,9 @@
    painted slump block, olive raised letters, slate band, clay tile, the parking lot. */
 
 :root {
-  --block: #BBC1C2;
-  --block-deep: #A0A7A7;
-  --sign: #3A444C;
+  --block: #D4D6CA;
+  --block-deep: #B4B8AA;
+  --sign: #363F49;
   --sign-deep: #252C33;
   --band: #33485E;
   --band-deep: #263749;
@@ -138,21 +138,37 @@ p { margin: 0; text-wrap: pretty; }
   position: absolute; inset: 0; z-index: -2;
   background-color: var(--block);
   background-image:
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .32 0 0 0 0 .34 0 0 0 0 .35 0 0 0 .5 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"),
-    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='264' height='136' viewBox='0 0 264 136'%3E%3Crect width='264' height='136' fill='%239BA1A1'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fdffff' stop-opacity='.55'/%3E%3Cstop offset='.22' stop-color='%23fdffff' stop-opacity='0'/%3E%3Cstop offset='.75' stop-color='%23000' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%23000' stop-opacity='.16'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='1.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23BFC5C5'/%3E%3Crect x='1.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='67.2' y='1.2' width='63.5' height='31.5' rx='8' fill='%23B6BCBD'/%3E%3Crect x='67.2' y='1.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='133.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23C2C8C8'/%3E%3Crect x='133.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='199.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23C5CBCB'/%3E%3Crect x='199.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='-31.8' y='35.2' width='63.5' height='31.5' rx='8' fill='%23BFC5C5'/%3E%3Crect x='-31.8' y='35.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='8' fill='%23C2C8C8'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='34.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23BCC2C3'/%3E%3Crect x='34.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='100.2' y='35.2' width='63.5' height='31.5' rx='7' fill='%23C2C8C8'/%3E%3Crect x='100.2' y='35.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3Crect x='166.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23B6BCBD'/%3E%3Crect x='166.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23BCC2C3'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='1.2' y='69.2' width='63.5' height='31.5' rx='7' fill='%23C5CBCB'/%3E%3Crect x='1.2' y='69.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3Crect x='67.2' y='69.2' width='63.5' height='31.5' rx='8' fill='%23C2C8C8'/%3E%3Crect x='67.2' y='69.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='133.2' y='69.2' width='63.5' height='31.5' rx='6' fill='%23C2C8C8'/%3E%3Crect x='133.2' y='69.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='199.2' y='69.2' width='63.5' height='31.5' rx='8' fill='%23B9BFC0'/%3E%3Crect x='199.2' y='69.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='-31.8' y='103.2' width='63.5' height='31.5' rx='6' fill='%23C5CBCB'/%3E%3Crect x='-31.8' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='8' fill='%23C5CBCB'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='34.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23B6BCBD'/%3E%3Crect x='34.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='100.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23BCC2C3'/%3E%3Crect x='100.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='166.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23C5CBCB'/%3E%3Crect x='166.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='7' fill='%23BFC5C5'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3C/svg%3E");
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .43 0 0 0 0 .45 0 0 0 0 .40 0 0 0 .32 0'/%3E%3C/filter%3E%3Crect width='220' height='220' filter='url(%23n)'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='264' height='136' viewBox='0 0 264 136'%3E%3Crect width='264' height='136' fill='%23AEB2A6'/%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%23fffff6' stop-opacity='.72'/%3E%3Cstop offset='.24' stop-color='%23fffff6' stop-opacity='0'/%3E%3Cstop offset='.74' stop-color='%231d2016' stop-opacity='0'/%3E%3Cstop offset='1' stop-color='%231d2016' stop-opacity='.16'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect x='1.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23D7D8CC'/%3E%3Crect x='1.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='67.2' y='1.2' width='63.5' height='31.5' rx='8' fill='%23CED0C4'/%3E%3Crect x='67.2' y='1.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='133.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23D9DACD'/%3E%3Crect x='133.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='199.2' y='1.2' width='63.5' height='31.5' rx='6' fill='%23DDDED1'/%3E%3Crect x='199.2' y='1.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='-31.8' y='35.2' width='63.5' height='31.5' rx='8' fill='%23D7D8CC'/%3E%3Crect x='-31.8' y='35.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='8' fill='%23D9DACD'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='34.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23D3D5C9'/%3E%3Crect x='34.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='100.2' y='35.2' width='63.5' height='31.5' rx='7' fill='%23D9DACD'/%3E%3Crect x='100.2' y='35.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3Crect x='166.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23CED0C4'/%3E%3Crect x='166.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='6' fill='%23D3D5C9'/%3E%3Crect x='232.2' y='35.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='1.2' y='69.2' width='63.5' height='31.5' rx='7' fill='%23DDDED1'/%3E%3Crect x='1.2' y='69.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3Crect x='67.2' y='69.2' width='63.5' height='31.5' rx='8' fill='%23D9DACD'/%3E%3Crect x='67.2' y='69.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='133.2' y='69.2' width='63.5' height='31.5' rx='6' fill='%23D9DACD'/%3E%3Crect x='133.2' y='69.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='199.2' y='69.2' width='63.5' height='31.5' rx='8' fill='%23D1D3C8'/%3E%3Crect x='199.2' y='69.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='-31.8' y='103.2' width='63.5' height='31.5' rx='6' fill='%23DDDED1'/%3E%3Crect x='-31.8' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='8' fill='%23DDDED1'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='8' fill='url(%23g)'/%3E%3Crect x='34.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23CED0C4'/%3E%3Crect x='34.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='100.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23D3D5C9'/%3E%3Crect x='100.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='166.2' y='103.2' width='63.5' height='31.5' rx='6' fill='%23DDDED1'/%3E%3Crect x='166.2' y='103.2' width='63.5' height='31.5' rx='6' fill='url(%23g)'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='7' fill='%23D7D8CC'/%3E%3Crect x='232.2' y='103.2' width='63.5' height='31.5' rx='7' fill='url(%23g)'/%3E%3C/svg%3E");
   background-size: 220px 220px, 264px 136px;
   background-position: 0 0, center top;
 }
 
 /* sunlight and time-of-day tint over the paint */
+.wall__sun {
+  position: absolute; inset: 0; z-index: 1;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  background:
+    radial-gradient(130% 92% at calc(50% + var(--sun-x) * 44%) -14%,
+      rgba(255, 243, 206, calc(var(--day) * .72)),
+      rgba(255, 234, 186, calc(var(--day) * .3)) 42%,
+      rgba(255, 232, 180, 0) 76%),
+    linear-gradient(rgba(255, 250, 232, calc(var(--day) * .22)), rgba(255, 250, 232, 0) 64%);
+  transition: background .2s linear;
+}
+
 .wall__light {
   position: absolute; inset: 0; z-index: 1;
   pointer-events: none;
   mix-blend-mode: multiply;
   background:
     linear-gradient(calc(90deg + var(--sun-x) * 60deg),
-      rgba(255, 214, 150, calc(var(--warm) * .28)),
-      rgba(255, 255, 255, 0) 70%),
+      rgba(255, 198, 126, calc(var(--warm) * .34)),
+      rgba(255, 255, 255, 0) 72%),
+    radial-gradient(115% 80% at calc(50% - var(--sun-x) * 48%) 118%,
+      rgba(96, 104, 116, calc(var(--day) * .3)),
+      rgba(96, 104, 116, 0) 68%),
     linear-gradient(rgba(62, 78, 116, calc((1 - var(--day)) * .82)),
       rgba(44, 50, 72, calc((1 - var(--day)) * .9)));
   transition: background .2s linear;
@@ -161,7 +177,7 @@ p { margin: 0; text-wrap: pretty; }
 /* the parapet with its two flood lamps */
 .parapet {
   position: absolute; left: 0; right: 0; top: 0; height: 14px;
-  background: linear-gradient(#AFB6B7, #969D9E);
+  background: linear-gradient(#C8CBBE, #A8ADA0);
   box-shadow: 0 2px 0 rgba(0, 0, 0, .06);
   z-index: 3;
 }

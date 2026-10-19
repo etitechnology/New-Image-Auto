@@ -58,7 +58,8 @@
     const altDeg = altitude / rad;
 
     const day = smooth(-7, 3, altDeg);                     // 0 at night, 1 in daylight
-    const warm = day * (1 - smooth(4, 22, altDeg));        // golden hour
+    // Sunlight is warm all day and turns amber as the sun drops.
+    const warm = day * (0.32 + 0.68 * (1 - smooth(5, 34, altDeg)));
     // Standing on Talbert looking at the wall: morning sun from the left, afternoon from the right.
     const across = -Math.sin(azimuth) * Math.cos(altitude);
     const high = Math.max(0.12, Math.sin(altitude));
