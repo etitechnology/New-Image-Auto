@@ -145,16 +145,17 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 /* sunlight and time-of-day tint over the paint */
+/* Sunlight falls on the wall only: it sits behind the letters so they
+   keep their edge. */
 .wall__sun {
-  position: absolute; inset: 0; z-index: 1;
+  position: absolute; inset: 0; z-index: -1;
   pointer-events: none;
   mix-blend-mode: screen;
   background:
-    radial-gradient(130% 92% at calc(50% + var(--sun-x) * 44%) -14%,
-      rgba(255, 243, 206, calc(var(--day) * .72)),
-      rgba(255, 234, 186, calc(var(--day) * .3)) 42%,
-      rgba(255, 232, 180, 0) 76%),
-    linear-gradient(rgba(255, 250, 232, calc(var(--day) * .22)), rgba(255, 250, 232, 0) 64%);
+    radial-gradient(115% 80% at calc(50% + var(--sun-x) * 46%) 26%,
+      rgba(255, 241, 203, calc(var(--day) * .46)),
+      rgba(255, 233, 184, calc(var(--day) * .18)) 45%,
+      rgba(255, 232, 180, 0) 76%);
   transition: background .2s linear;
 }
 
