@@ -340,33 +340,35 @@ p { margin: 0; text-wrap: pretty; }
 .btn--line:hover { background: rgba(255, 255, 255, .08); border-color: #F1EEE6; }
 
 /* ------------------------------------------------------------------ */
-/* The shop itself                                                     */
+/* The shop itself, beside Amir's words                               */
 /* ------------------------------------------------------------------ */
 .snapshot {
-  margin: clamp(48px, 7vw, 86px) auto 0;
-  padding: 0 var(--gutter);
-  max-width: 1120px;
+  /* runs off the left edge of the screen and back to the text column */
+  --bleed: calc(max((100vw - var(--wrap)) / 2, 0px) + var(--gutter));
+  margin: 0 0 0 calc(-1 * var(--bleed));
+  width: calc(100% + var(--bleed));
+  height: 100%;
+  min-height: 22rem;
 }
 .snapshot img {
   width: 100%;
-  max-width: 1000px;        /* the photo's own width, so it stays sharp */
-  margin: 0 auto;
-  border-radius: 2px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, .14), 0 18px 40px -22px rgba(30, 32, 28, .5);
-}
-.snapshot figcaption {
-  max-width: 1000px;
-  margin: 14px auto 0;
-  font-family: var(--sans);
-  font-size: 0.875rem;
-  font-variation-settings: "wdth" 92;
-  color: var(--ink-soft);
+  height: 100%;
+  object-fit: cover;
+  object-position: 62% 46%;   /* keeps the sign and the awning in frame */
+  border-radius: 0 2px 2px 0;
 }
 
 /* ------------------------------------------------------------------ */
 /* The name                                                            */
 /* ------------------------------------------------------------------ */
-.name { padding: clamp(70px, 10vw, 120px) 0 clamp(70px, 10vw, 120px); }
+.name { padding: clamp(70px, 10vw, 120px) 0 clamp(70px, 10vw, 120px); overflow: clip; }
+.name__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+  gap: clamp(28px, 4.5vw, 64px);
+  align-items: stretch;
+}
+.name__words { max-width: 36rem; }
 
 .name__quote { margin: 0; }
 .name__quote p {
@@ -391,8 +393,8 @@ p { margin: 0; text-wrap: pretty; }
 .name__sig .hand { font-size: 2.1rem; line-height: 1; transform: rotate(-4deg); display: inline-block; }
 
 .name__story {
-  margin-top: clamp(48px, 7vw, 72px);
-  padding-top: 28px;
+  margin-top: clamp(36px, 5vw, 56px);
+  padding-top: 26px;
   border-top: 1px solid var(--rule);
   display: grid; gap: 1em;
   color: #333833;
@@ -701,8 +703,14 @@ p { margin: 0; text-wrap: pretty; }
 }
 
 .lot__media { display: grid; gap: 16px; }
-.map { border-radius: 3px; overflow: hidden; aspect-ratio: 4 / 3; background: #3a3b3c; }
-@media (max-width: 900px) { .map { aspect-ratio: 16 / 10; } }
+.photo { margin: 0; }
+.photo img {
+  border-radius: 3px;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: 50% 42%;
+}
+.map { border-radius: 3px; overflow: hidden; aspect-ratio: 16 / 10; background: #3a3b3c; }
 .map iframe { width: 100%; height: 100%; border: 0; filter: grayscale(.85) contrast(.95); }
 
 .foot {
@@ -719,7 +727,13 @@ p { margin: 0; text-wrap: pretty; }
 /* Smaller screens                                                     */
 /* ------------------------------------------------------------------ */
 @media (max-width: 900px) {
-  .order-wrap, .bay__grid, .lot__grid { grid-template-columns: 1fr; }
+  .order-wrap, .bay__grid, .lot__grid, .name__grid { grid-template-columns: 1fr; }
+  .snapshot {
+    width: calc(100% + 2 * var(--gutter));
+    margin: 0 calc(-1 * var(--gutter)) clamp(28px, 6vw, 44px);
+    height: auto; min-height: 0;
+  }
+  .snapshot img { aspect-ratio: 16 / 10; object-position: 50% 44%; border-radius: 0; }
   .order-intro { position: static; }
 }
 
