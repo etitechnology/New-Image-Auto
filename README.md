@@ -1,6 +1,6 @@
-# New Image Auto Services
+# New Image Auto Service
 
-One-page site for New Image Auto Services, 7622 Talbert Ave, Huntington Beach, CA.
+One-page site for New Image Auto Service, 7622 Talbert Ave, Huntington Beach, CA.
 
 Plain static HTML/CSS/JS with no build step. It runs on GitHub Pages as is: Settings → Pages → deploy from `main`, root folder.
 

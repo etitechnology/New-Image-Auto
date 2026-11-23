@@ -1,4 +1,4 @@
-/* New Image Auto Services
+/* New Image Auto Service
    The sign's shadows follow the real sun over 7622 Talbert Ave. */
 (() => {
   const LAT = 33.7008483;
